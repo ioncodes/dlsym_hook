@@ -1,0 +1,8 @@
+proj/build
+example/*.id*
+example/*.ll
+example/*.csv
+example/*.o
+example/*.tmp
+example/*.nam
+example/dummy*
