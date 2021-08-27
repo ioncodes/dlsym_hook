@@ -124,8 +124,8 @@ void create_print_checked(const std::unique_ptr<Module>& program, IRBuilder<>& b
 
 int main(int argc, char* argv[])
 {
-    std::unique_ptr<Module> program = nullptr;
     LLVMContext context;
+    std::unique_ptr<Module> program = nullptr;
     parse(argv[1], program, context);
 
     printf("Loaded IR: %s\n", program->getModuleIdentifier().data());
