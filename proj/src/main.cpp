@@ -81,7 +81,7 @@ void process(const std::unique_ptr<Module>& program, IRBuilder<>& builder)
     const auto print = program->getFunction("printf");
     const auto print_checked = program->getFunction("print_checked");
 
-	for (const auto& user : function_call->users())
+    for (const auto& user : function_call->users())
     {
         // make sure the reference is actually a call instruction
         if (!llvm::isa<CallInst>(user))
